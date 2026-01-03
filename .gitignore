@@ -1,0 +1,17 @@
+# ML / Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+.venv/
+env/
+
+# Training & artifacts
+artifacts/
+logs/
+notebooks/
+music_system.egg-info/
+
+# OS
+.DS_Store
