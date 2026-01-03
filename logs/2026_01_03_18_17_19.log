@@ -1,0 +1,3 @@
+[ 2026-01-03 18:17:19,456 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 18:17:19,544 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 18:17:19,548 ] INFO - werkzeug -  * Debugger PIN: 438-014-038

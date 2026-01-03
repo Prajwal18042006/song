@@ -1,0 +1,5 @@
+[ 2026-01-03 17:56:06,668 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 17:56:06,673 ] INFO - root - Starting KNN-based model trainer
+[ 2026-01-03 17:56:06,674 ] INFO - root - KNN model trained successfully
+[ 2026-01-03 17:56:06,677 ] INFO - root - Object saved successfully at artifacts\knn_model.pkl
+[ 2026-01-03 17:56:06,677 ] INFO - root - KNN model saved successfully

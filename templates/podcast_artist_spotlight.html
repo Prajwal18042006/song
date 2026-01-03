@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Spotlight - MusicFlow Podcasts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #ff006e;
+            --secondary: #cc0056;
+            --accent: #00d4ff;
+            --dark: #0a0e27;
+            --darker: #050815;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--darker);
+            color: #fff;
+            line-height: 1.6;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 50px;
+            background: rgba(10, 14, 39, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            background: linear-gradient(90deg, #00d4ff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .nav-links a:hover { color: var(--primary); }
+        .container {
+            max-width: 1000px;
+            margin: 120px auto 50px;
+            padding: 50px;
+            background: rgba(26, 31, 58, 0.8);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 0, 110, 0.2);
+        }
+        .podcast-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .podcast-header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+        .podcast-icon {
+            font-size: 100px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        .episode-list {
+            margin-top: 40px;
+        }
+        .episode-item {
+            background: rgba(10, 14, 39, 0.6);
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 0, 110, 0.2);
+            transition: all 0.3s;
+        }
+        .episode-item:hover {
+            border-color: var(--primary);
+            transform: translateX(10px);
+        }
+        .episode-title {
+            font-size: 22px;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .episode-meta {
+            color: #a8cfff;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .episode-description {
+            color: #c8dfff;
+            line-height: 1.8;
+        }
+        .play-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border: none;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .play-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 0, 110, 0.5);
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">🎵 MusicFlow</a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/podcasts"><i class="fas fa-podcast"></i> Podcast</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <a href="/podcasts" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Podcasts</a>
+        
+        <div class="podcast-header">
+            <div class="podcast-icon"><i class="fas fa-star"></i></div>
+            <h1>Artist Spotlight</h1>
+            <p style="color: #a8cfff; font-size: 18px;">Hosted by Mike Chen</p>
+        </div>
+
+        <div style="background: rgba(255, 0, 110, 0.1); padding: 30px; border-radius: 16px; margin-bottom: 40px;">
+            <h2 style="color: var(--primary); margin-bottom: 15px;">About This Podcast</h2>
+            <p style="color: #c8dfff; line-height: 1.8;">
+                Intimate conversations with emerging and established artists from around the world. Get behind-the-scenes 
+                insights into their creative process, inspirations, and the stories behind their biggest hits. Host Mike 
+                Chen brings you candid interviews that reveal the human side of music creation.
+            </p>
+        </div>
+
+        <div class="episode-list">
+            <h2 style="color: var(--primary); margin-bottom: 30px; font-family: 'Orbitron', sans-serif;">
+                <i class="fas fa-list"></i> Latest Episodes
+            </h2>
+
+            <div class="episode-item">
+                <div class="episode-title">Episode 32: Rising Star - The Journey of Indie Artist Luna</div>
+                <div class="episode-meta">
+                    <i class="fas fa-calendar"></i> January 12, 2024 | 
+                    <i class="fas fa-clock"></i> 55 min | 
+                    <i class="fas fa-headphones"></i> 28.5K listens
+                </div>
+                <div class="episode-description">
+                    An inspiring conversation with indie sensation Luna about her journey from bedroom recordings 
+                    to sold-out shows. Learn about her creative process and the challenges of independent artistry.
+                </div>
+                <button class="play-btn"><i class="fas fa-play"></i> Play Episode</button>
+            </div>
+
+            <div class="episode-item">
+                <div class="episode-title">Episode 31: Behind the Hit - The Making of "Midnight Dreams"</div>
+                <div class="episode-meta">
+                    <i class="fas fa-calendar"></i> January 5, 2024 | 
+                    <i class="fas fa-clock"></i> 48 min | 
+                    <i class="fas fa-headphones"></i> 35.2K listens
+                </div>
+                <div class="episode-description">
+                    Go behind the scenes with producer Marcus and artist Elena as they break down the creation 
+                    of their chart-topping single. From initial concept to final mix, discover the magic behind the music.
+                </div>
+                <button class="play-btn"><i class="fas fa-play"></i> Play Episode</button>
+            </div>
+
+            <div class="episode-item">
+                <div class="episode-title">Episode 30: The Comeback Story - From Break to Breakthrough</div>
+                <div class="episode-meta">
+                    <i class="fas fa-calendar"></i> December 29, 2023 | 
+                    <i class="fas fa-clock"></i> 52 min | 
+                    <i class="fas fa-headphones"></i> 31.8K listens
+                </div>
+                <div class="episode-description">
+                    A powerful interview with an artist who took a break from music and came back stronger than ever. 
+                    Learn about resilience, reinvention, and the power of artistic authenticity.
+                </div>
+                <button class="play-btn"><i class="fas fa-play"></i> Play Episode</button>
+            </div>
+
+            <div class="episode-item">
+                <div class="episode-title">Episode 29: Genre Fusion - Blending Cultures Through Music</div>
+                <div class="episode-meta">
+                    <i class="fas fa-calendar"></i> December 22, 2023 | 
+                    <i class="fas fa-clock"></i> 50 min | 
+                    <i class="fas fa-headphones"></i> 27.3K listens
+                </div>
+                <div class="episode-description">
+                    Meet artists who are breaking boundaries by fusing different musical traditions. Explore how 
+                    cultural exchange creates new sounds and connects people across the globe.
+                </div>
+                <button class="play-btn"><i class="fas fa-play"></i> Play Episode</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

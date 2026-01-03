@@ -1,0 +1,9 @@
+[ 2026-01-03 18:27:50,689 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 18:27:50,786 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 18:27:50,789 ] INFO - werkzeug -  * Debugger PIN: 127-798-506
+[ 2026-01-03 18:27:59,640 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:27:59] "GET /ui HTTP/1.1" 200 -
+[ 2026-01-03 18:28:02,560 ] INFO - root - Starting prediction pipeline
+[ 2026-01-03 18:28:05,607 ] INFO - root - Recommendations generated successfully
+[ 2026-01-03 18:28:05,621 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:28:05] "POST /ui HTTP/1.1" 200 -
+[ 2026-01-03 18:43:03,355 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\data_transformation.py', reloading
+[ 2026-01-03 18:43:03,355 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\src\\components\\data_transformation.py', reloading

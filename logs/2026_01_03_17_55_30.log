@@ -1,0 +1,16 @@
+[ 2026-01-03 17:55:30,789 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 17:55:30,899 ] INFO - root - Starting data ingestion process
+[ 2026-01-03 17:55:31,192 ] INFO - root - Dataset loaded successfully
+[ 2026-01-03 17:55:31,986 ] INFO - root - Raw data saved
+[ 2026-01-03 17:55:32,881 ] INFO - root - Train and test data saved successfully
+[ 2026-01-03 17:55:32,881 ] INFO - root - Data ingestion completed
+[ 2026-01-03 17:55:33,277 ] INFO - root - Train and test data loaded successfully
+[ 2026-01-03 17:55:33,287 ] INFO - root - Dropped unnecessary columns
+[ 2026-01-03 17:55:33,291 ] INFO - root - Numerical and categorical pipelines created
+[ 2026-01-03 17:55:33,506 ] INFO - root - Data transformation completed
+[ 2026-01-03 17:55:33,509 ] INFO - root - Object saved successfully at artifacts\preprocessor.pkl
+[ 2026-01-03 17:55:33,509 ] INFO - root - Preprocessor object saved successfully
+[ 2026-01-03 17:55:33,510 ] INFO - root - Starting KNN-based model trainer
+[ 2026-01-03 17:55:33,516 ] INFO - root - KNN model trained successfully
+[ 2026-01-03 17:55:33,528 ] INFO - root - Object saved successfully at artifacts\knn_model.pkl
+[ 2026-01-03 17:55:33,528 ] INFO - root - KNN model saved successfully

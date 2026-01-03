@@ -1,0 +1,17 @@
+[ 2026-01-03 18:12:40,508 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 18:12:40,587 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 18:12:40,592 ] INFO - werkzeug -  * Debugger PIN: 438-014-038
+[ 2026-01-03 18:12:40,616 ] INFO - root - Starting prediction pipeline
+[ 2026-01-03 18:12:41,917 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:12:41] "[35m[1mPOST /recommend HTTP/1.1[0m" 500 -
+[ 2026-01-03 18:12:41,987 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:12:41] "GET /recommend?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2026-01-03 18:12:41,988 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:12:41] "GET /recommend?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2026-01-03 18:12:42,017 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:12:42] "GET /recommend?__debugger__=yes&cmd=resource&f=console.png&s=xrfKM2Y0WLeCgBiIY1Q6 HTTP/1.1" 200 -
+[ 2026-01-03 18:12:42,037 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:12:42] "GET /recommend?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[ 2026-01-03 18:13:00,009 ] INFO - root - Starting prediction pipeline
+[ 2026-01-03 18:13:01,143 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:13:01] "[35m[1mPOST /recommend HTTP/1.1[0m" 500 -
+[ 2026-01-03 18:13:01,163 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:13:01] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2026-01-03 18:13:01,171 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:13:01] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2026-01-03 18:13:01,188 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:13:01] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=console.png&s=xrfKM2Y0WLeCgBiIY1Q6 HTTP/1.1[0m" 304 -
+[ 2026-01-03 18:17:03,047 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\data_ingestion.py', reloading
+[ 2026-01-03 18:17:03,049 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\data_ingestion.py', reloading
+[ 2026-01-03 18:17:03,051 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\data_ingestion.py', reloading

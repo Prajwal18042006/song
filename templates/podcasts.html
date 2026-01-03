@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcasts - MusicFlow</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 60px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo i {
+            color: #6366f1;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #6366f1;
+        }
+
+        .nav-links a.active {
+            color: #6366f1;
+        }
+
+        .nav-links .btn-book {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 8px;
+            border: 2px solid #1a1a1a;
+            transition: all 0.3s;
+        }
+
+        .nav-links .btn-book:hover {
+            background: transparent;
+            color: #1a1a1a;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            padding: 140px 60px 80px;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #6b7280;
+            font-size: 20px;
+            margin-bottom: 60px;
+        }
+
+        /* Podcast Grid with Slide-in Animation */
+        .podcasts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .podcast-card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+            transition: all 0.4s;
+            cursor: pointer;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideDown 0.6s ease-out forwards;
+        }
+
+        /* Staggered animation delays for each card */
+        .podcast-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .podcast-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .podcast-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .podcast-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .podcast-card:hover {
+            transform: translateY(-10px);
+            border-color: #6366f1;
+            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.3);
+        }
+
+        .podcast-image {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .podcast-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><circle cx="200" cy="200" r="150" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/><circle cx="200" cy="200" r="100" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/><circle cx="200" cy="200" r="50" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .podcast-image i {
+            z-index: 1;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .podcast-content {
+            padding: 30px;
+        }
+
+        .podcast-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .podcast-host {
+            color: #6b7280;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .podcast-description {
+            color: #6b7280;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .podcast-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .podcast-episodes {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .podcast-play-btn {
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+            border: none;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .podcast-play-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.5);
+        }
+
+        /* Gradient backgrounds for each podcast */
+        .podcast-1 .podcast-image {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .podcast-2 .podcast-image {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .podcast-3 .podcast-image {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+
+        .podcast-4 .podcast-image {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .hero {
+                padding: 120px 20px 60px;
+            }
+
+            .podcasts-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">
+            <i class="fas fa-music"></i> MusicFlow
+        </a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#concepts">Concepts</a></li>
+            <li><a href="/#advantages">Advantages</a></li>
+            <li><a href="/podcasts" class="active"><i class="fas fa-podcast"></i> Podcast</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1><i class="fas fa-podcast"></i> Discover Podcasts</h1>
+            <p class="subtitle">Explore our curated collection of music-related podcasts</p>
+
+            <div class="podcasts-grid">
+                <!-- Podcast 1 -->
+                <div class="podcast-card podcast-1" onclick="window.location.href='/podcast/tech-beats'">
+                    <div class="podcast-image">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <div class="podcast-content">
+                        <h3 class="podcast-title">Tech Beats</h3>
+                        <p class="podcast-host"><i class="fas fa-user"></i> Hosted by Alex Johnson</p>
+                        <p class="podcast-description">
+                            Explore the intersection of technology and music. From AI-generated compositions to the latest music tech innovations, discover how technology is shaping the future of sound.
+                        </p>
+                        <div class="podcast-meta">
+                            <span class="podcast-episodes"><i class="fas fa-headphones"></i> 24 Episodes</span>
+                            <a href="/podcast/tech-beats" class="podcast-play-btn">
+                                <i class="fas fa-play"></i> Listen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Podcast 2 -->
+                <div class="podcast-card podcast-2" onclick="window.location.href='/podcast/music-history'">
+                    <div class="podcast-image">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="podcast-content">
+                        <h3 class="podcast-title">Music History Uncovered</h3>
+                        <p class="podcast-host"><i class="fas fa-user"></i> Hosted by Sarah Williams</p>
+                        <p class="podcast-description">
+                            Journey through the rich history of music. From classical masterpieces to modern hits, learn about the stories, artists, and movements that shaped music as we know it today.
+                        </p>
+                        <div class="podcast-meta">
+                            <span class="podcast-episodes"><i class="fas fa-headphones"></i> 18 Episodes</span>
+                            <a href="/podcast/music-history" class="podcast-play-btn">
+                                <i class="fas fa-play"></i> Listen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Podcast 3 -->
+                <div class="podcast-card podcast-3" onclick="window.location.href='/podcast/artist-spotlight'">
+                    <div class="podcast-image">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="podcast-content">
+                        <h3 class="podcast-title">Artist Spotlight</h3>
+                        <p class="podcast-host"><i class="fas fa-user"></i> Hosted by Mike Chen</p>
+                        <p class="podcast-description">
+                            Intimate conversations with emerging and established artists. Get behind-the-scenes insights into their creative process, inspirations, and the stories behind their biggest hits.
+                        </p>
+                        <div class="podcast-meta">
+                            <span class="podcast-episodes"><i class="fas fa-headphones"></i> 32 Episodes</span>
+                            <a href="/podcast/artist-spotlight" class="podcast-play-btn">
+                                <i class="fas fa-play"></i> Listen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Podcast 4 -->
+                <div class="podcast-card podcast-4" onclick="window.location.href='/podcast/sound-science'">
+                    <div class="podcast-image">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="podcast-content">
+                        <h3 class="podcast-title">Sound Science</h3>
+                        <p class="podcast-host"><i class="fas fa-user"></i> Hosted by Dr. Emily Rodriguez</p>
+                        <p class="podcast-description">
+                            Discover the science behind sound and music. From acoustics to psychoacoustics, explore how our brains process music and why certain sounds evoke specific emotions.
+                        </p>
+                        <div class="podcast-meta">
+                            <span class="podcast-episodes"><i class="fas fa-headphones"></i> 15 Episodes</span>
+                            <a href="/podcast/sound-science" class="podcast-play-btn">
+                                <i class="fas fa-play"></i> Listen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Additional animation on scroll for better effect
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all podcast cards
+        document.querySelectorAll('.podcast-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

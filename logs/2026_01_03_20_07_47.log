@@ -1,0 +1,14 @@
+[ 2026-01-03 20:07:47,969 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 20:07:48,050 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 20:07:48,054 ] INFO - werkzeug -  * Debugger PIN: 127-798-506
+[ 2026-01-03 20:10:03,581 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 20:10:03] "GET /podcasts HTTP/1.1" 200 -
+[ 2026-01-03 20:10:07,572 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 20:10:07] "GET /podcast/music-history HTTP/1.1" 200 -
+[ 2026-01-03 20:10:07,577 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 20:10:07] "GET /podcast/music-history HTTP/1.1" 200 -
+[ 2026-01-03 20:10:12,697 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 20:10:12] "GET /podcast/sound-science HTTP/1.1" 200 -
+[ 2026-01-03 20:10:13,012 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 20:10:13] "GET /podcast/sound-science HTTP/1.1" 200 -
+[ 2026-01-03 20:10:17,145 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 20:10:17] "GET / HTTP/1.1" 200 -
+[ 2026-01-03 20:10:21,810 ] INFO - root - Starting prediction pipeline
+[ 2026-01-03 20:10:26,960 ] INFO - root - Recommendations generated successfully
+[ 2026-01-03 20:10:26,977 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 20:10:26] "POST /api/recommend HTTP/1.1" 200 -
+[ 2026-01-03 20:10:46,191 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 20:10:46] "GET /podcasts HTTP/1.1" 200 -
+[ 2026-01-03 20:10:48,096 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 20:10:48] "GET / HTTP/1.1" 200 -

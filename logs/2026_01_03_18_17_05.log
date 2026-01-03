@@ -1,0 +1,5 @@
+[ 2026-01-03 18:17:05,199 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 18:17:05,299 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 18:17:05,304 ] INFO - werkzeug -  * Debugger PIN: 438-014-038
+[ 2026-01-03 18:17:17,654 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\model_trainer.py', reloading
+[ 2026-01-03 18:17:17,655 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\model_trainer.py', reloading

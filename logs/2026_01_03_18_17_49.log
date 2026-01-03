@@ -1,0 +1,19 @@
+[ 2026-01-03 18:17:49,300 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 18:17:49,402 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 18:17:49,405 ] INFO - werkzeug -  * Debugger PIN: 438-014-038
+[ 2026-01-03 18:17:57,215 ] INFO - root - Starting prediction pipeline
+[ 2026-01-03 18:18:00,394 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:18:00] "[35m[1mPOST /recommend HTTP/1.1[0m" 500 -
+[ 2026-01-03 18:18:00,593 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:18:00] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2026-01-03 18:18:00,595 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:18:00] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2026-01-03 18:18:00,605 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:18:00] "GET /recommend?__debugger__=yes&cmd=resource&f=console.png&s=HfSFTqmbXD7JpvpGMfJL HTTP/1.1" 200 -
+[ 2026-01-03 18:18:00,614 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:18:00] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2026-01-03 18:18:11,113 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:18:11] "GET / HTTP/1.1" 200 -
+[ 2026-01-03 18:18:13,117 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:18:13] "GET /ui HTTP/1.1" 200 -
+[ 2026-01-03 18:18:15,458 ] INFO - root - Starting prediction pipeline
+[ 2026-01-03 18:18:16,454 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:18:16] "[35m[1mPOST /recommend HTTP/1.1[0m" 500 -
+[ 2026-01-03 18:18:16,466 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:18:16] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2026-01-03 18:18:16,467 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:18:16] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2026-01-03 18:18:16,476 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:18:16] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=console.png&s=HfSFTqmbXD7JpvpGMfJL HTTP/1.1[0m" 304 -
+[ 2026-01-03 18:23:28,695 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\data_ingestion.py', reloading
+[ 2026-01-03 18:23:28,695 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\data_ingestion.py', reloading
+[ 2026-01-03 18:23:28,697 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\data_ingestion.py', reloading

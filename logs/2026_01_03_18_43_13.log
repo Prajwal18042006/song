@@ -1,0 +1,8 @@
+[ 2026-01-03 18:43:13,201 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 18:43:13,292 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 18:43:13,297 ] INFO - werkzeug -  * Debugger PIN: 127-798-506
+[ 2026-01-03 18:43:13,475 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\anaconda3\\Lib\\site-packages\\numpy\\typing\\__init__.py', reloading
+[ 2026-01-03 18:43:13,477 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\anaconda3\\Lib\\site-packages\\numpy\\_typing\\_array_like.py', reloading
+[ 2026-01-03 18:43:13,681 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\anaconda3\\Lib\\site-packages\\numpy\\_typing\\_nested_sequence.py', reloading
+[ 2026-01-03 18:43:13,828 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\anaconda3\\Lib\\site-packages\\joblib\\memory.py', reloading
+[ 2026-01-03 18:43:13,883 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\anaconda3\\Lib\\site-packages\\joblib\\logger.py', reloading

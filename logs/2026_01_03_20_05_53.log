@@ -1,0 +1,4 @@
+[ 2026-01-03 20:05:53,992 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 20:05:54,088 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 20:05:54,092 ] INFO - werkzeug -  * Debugger PIN: 127-798-506
+[ 2026-01-03 20:06:05,307 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\anaconda3\\Scripts\\conda-script.py', reloading

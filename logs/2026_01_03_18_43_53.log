@@ -1,0 +1,21 @@
+[ 2026-01-03 18:43:53,183 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 18:43:53,265 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 18:43:53,270 ] INFO - werkzeug -  * Debugger PIN: 127-798-506
+[ 2026-01-03 18:44:19,918 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:44:19] "GET / HTTP/1.1" 200 -
+[ 2026-01-03 18:44:22,008 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:44:22] "GET /ui HTTP/1.1" 200 -
+[ 2026-01-03 18:44:24,220 ] INFO - root - Starting prediction pipeline
+[ 2026-01-03 18:44:28,280 ] INFO - root - Recommendations generated successfully
+[ 2026-01-03 18:44:28,294 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:44:28] "POST /ui HTTP/1.1" 200 -
+[ 2026-01-03 18:44:30,976 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:44:30] "GET /ui HTTP/1.1" 200 -
+[ 2026-01-03 18:45:48,945 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:45:48] "GET /ui HTTP/1.1" 200 -
+[ 2026-01-03 18:45:52,748 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:45:52] "GET /ui HTTP/1.1" 200 -
+[ 2026-01-03 18:46:07,224 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:46:07] "GET /ui HTTP/1.1" 200 -
+[ 2026-01-03 18:46:08,037 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:46:08] "GET /ui HTTP/1.1" 200 -
+[ 2026-01-03 18:46:08,379 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:46:08] "GET /ui HTTP/1.1" 200 -
+[ 2026-01-03 18:46:08,607 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:46:08] "GET /ui HTTP/1.1" 200 -
+[ 2026-01-03 18:46:08,633 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\src\\__init__.py', reloading
+[ 2026-01-03 18:46:08,639 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\__init__.py', reloading
+[ 2026-01-03 18:46:08,642 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\__init__.py', reloading
+[ 2026-01-03 18:46:08,644 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\setup.py', reloading
+[ 2026-01-03 18:46:08,645 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\src\\components\\__init__.py', reloading
+[ 2026-01-03 18:46:08,649 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\setup.py', reloading

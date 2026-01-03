@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: music-system
+Version: 0.1.0
+Summary: A Machine Learning Web Application
+Author: Prajwal Jagtap
+Author-email: prajwaljagtap977@gmail.com
+Requires-Dist: flask
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: joblib
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: gunicorn

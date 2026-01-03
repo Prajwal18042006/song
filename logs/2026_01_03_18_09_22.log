@@ -1,0 +1,9 @@
+[ 2026-01-03 18:09:22,380 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 18:09:22,460 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 18:09:22,464 ] INFO - werkzeug -  * Debugger PIN: 438-014-038
+[ 2026-01-03 18:10:12,091 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:10:12] "GET / HTTP/1.1" 200 -
+[ 2026-01-03 18:10:12,276 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:10:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-01-03 18:10:32,184 ] INFO - werkzeug - 127.0.0.1 - - [03/Jan/2026 18:10:32] "[33mGET /predict HTTP/1.1[0m" 404 -
+[ 2026-01-03 18:12:09,669 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\app.py', reloading
+[ 2026-01-03 18:12:09,673 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\app.py', reloading
+[ 2026-01-03 18:12:09,673 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\app.py', reloading

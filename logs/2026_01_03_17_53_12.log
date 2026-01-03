@@ -1,0 +1,13 @@
+[ 2026-01-03 17:53:12,712 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 17:53:12,881 ] INFO - root - Starting data ingestion process
+[ 2026-01-03 17:53:13,187 ] INFO - root - Dataset loaded successfully
+[ 2026-01-03 17:53:14,122 ] INFO - root - Raw data saved
+[ 2026-01-03 17:53:15,067 ] INFO - root - Train and test data saved successfully
+[ 2026-01-03 17:53:15,068 ] INFO - root - Data ingestion completed
+[ 2026-01-03 17:53:15,454 ] INFO - root - Train and test data loaded successfully
+[ 2026-01-03 17:53:15,474 ] INFO - root - Dropped unnecessary columns
+[ 2026-01-03 17:53:15,474 ] INFO - root - Numerical and categorical pipelines created
+[ 2026-01-03 17:53:15,693 ] INFO - root - Data transformation completed
+[ 2026-01-03 17:53:15,698 ] INFO - root - Object saved successfully at artifacts\preprocessor.pkl
+[ 2026-01-03 17:53:15,698 ] INFO - root - Preprocessor object saved successfully
+[ 2026-01-03 17:53:15,699 ] INFO - root - Starting model trainer (Cosine Similarity)

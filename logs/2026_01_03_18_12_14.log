@@ -1,0 +1,10 @@
+[ 2026-01-03 18:12:14,664 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 18:12:14,802 ] INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000
+[ 2026-01-03 18:12:14,802 ] INFO - werkzeug - [33mPress CTRL+C to quit[0m
+[ 2026-01-03 18:12:14,828 ] INFO - werkzeug -  * Restarting with watchdog (windowsapi)
+[ 2026-01-03 18:12:39,561 ] INFO - werkzeug -  * Restarting with watchdog (windowsapi)
+[ 2026-01-03 18:17:04,255 ] INFO - werkzeug -  * Restarting with watchdog (windowsapi)
+[ 2026-01-03 18:17:18,601 ] INFO - werkzeug -  * Restarting with watchdog (windowsapi)

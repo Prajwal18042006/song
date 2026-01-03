@@ -1,0 +1,15 @@
+[ 2026-01-03 18:59:29,226 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 18:59:29,379 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 18:59:29,385 ] INFO - werkzeug -  * Debugger PIN: 127-798-506
+[ 2026-01-03 18:59:29,385 ] INFO - werkzeug -  * Debugger PIN: 127-798-506
+[ 2026-01-03 19:00:23,382 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\app.py', reloading
+[ 2026-01-03 19:00:23,383 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\app.py', reloading
+[ 2026-01-03 19:00:23,385 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\app.py', reloading
+[ 2026-01-03 19:00:23,386 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\app.py', reloading
+[ 2026-01-03 19:00:23,386 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\app.py', reloading
+[ 2026-01-03 19:00:23,387 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\app.py', reloading
+[ 2026-01-03 19:00:23,388 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\app.py', reloading
+[ 2026-01-03 19:00:23,389 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\app.py', reloading
+[ 2026-01-03 19:00:23,389 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\app.py', reloading
+[ 2026-01-03 19:00:23,390 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\app.py', reloading
+[ 2026-01-03 19:00:23,391 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\app.py', reloading

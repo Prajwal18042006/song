@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Science - MusicFlow Podcasts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #00ff88;
+            --secondary: #00cc6a;
+            --accent: #00d4ff;
+            --dark: #0a0e27;
+            --darker: #050815;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--darker);
+            color: #fff;
+            line-height: 1.6;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 50px;
+            background: rgba(10, 14, 39, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            background: linear-gradient(90deg, #00d4ff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .nav-links a:hover { color: var(--primary); }
+        .container {
+            max-width: 1000px;
+            margin: 120px auto 50px;
+            padding: 50px;
+            background: rgba(26, 31, 58, 0.8);
+            border-radius: 24px;
+            border: 1px solid rgba(0, 255, 136, 0.2);
+        }
+        .podcast-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .podcast-header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+        .podcast-icon {
+            font-size: 100px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        .episode-list {
+            margin-top: 40px;
+        }
+        .episode-item {
+            background: rgba(10, 14, 39, 0.6);
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            transition: all 0.3s;
+        }
+        .episode-item:hover {
+            border-color: var(--primary);
+            transform: translateX(10px);
+        }
+        .episode-title {
+            font-size: 22px;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .episode-meta {
+            color: #a8cfff;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .episode-description {
+            color: #c8dfff;
+            line-height: 1.8;
+        }
+        .play-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border: none;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .play-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.5);
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">🎵 MusicFlow</a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/podcasts"><i class="fas fa-podcast"></i> Podcast</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <a href="/podcasts" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Podcasts</a>
+        
+        <div class="podcast-header">
+            <div class="podcast-icon"><i class="fas fa-flask"></i></div>
+            <h1>Sound Science</h1>
+            <p style="color: #a8cfff; font-size: 18px;">Hosted by Dr. Emily Rodriguez</p>
+        </div>
+
+        <div style="background: rgba(0, 255, 136, 0.1); padding: 30px; border-radius: 16px; margin-bottom: 40px;">
+            <h2 style="color: var(--primary); margin-bottom: 15px;">About This Podcast</h2>
+            <p style="color: #c8dfff; line-height: 1.8;">
+                Discover the fascinating science behind sound and music. From acoustics to psychoacoustics, we explore 
+                how our brains process music and why certain sounds evoke specific emotions. Dr. Emily Rodriguez breaks 
+                down complex scientific concepts in an accessible way, featuring interviews with researchers and 
+                experiments you can try at home.
+            </p>
+        </div>
+
+        <div class="episode-list">
+            <h2 style="color: var(--primary); margin-bottom: 30px; font-family: 'Orbitron', sans-serif;">
+                <i class="fas fa-list"></i> Latest Episodes
+            </h2>
+
+            <div class="episode-item">
+                <div class="episode-title">Episode 15: How Your Brain Processes Music</div>
+                <div class="episode-meta">
+                    <i class="fas fa-calendar"></i> January 14, 2024 | 
+                    <i class="fas fa-clock"></i> 42 min | 
+                    <i class="fas fa-headphones"></i> 19.7K listens
+                </div>
+                <div class="episode-description">
+                    Explore the neuroscience of music perception. How does your brain transform sound waves into 
+                    emotional experiences? We dive into the latest research on music and the mind.
+                </div>
+                <button class="play-btn"><i class="fas fa-play"></i> Play Episode</button>
+            </div>
+
+            <div class="episode-item">
+                <div class="episode-title">Episode 14: The Physics of Musical Instruments</div>
+                <div class="episode-meta">
+                    <i class="fas fa-calendar"></i> January 7, 2024 | 
+                    <i class="fas fa-clock"></i> 45 min | 
+                    <i class="fas fa-headphones"></i> 16.3K listens
+                </div>
+                <div class="episode-description">
+                    From strings to brass, discover the physics principles that make musical instruments work. 
+                    Learn how vibration, resonance, and harmonics create the sounds we love.
+                </div>
+                <button class="play-btn"><i class="fas fa-play"></i> Play Episode</button>
+            </div>
+
+            <div class="episode-item">
+                <div class="episode-title">Episode 13: Why Music Gives You Chills</div>
+                <div class="episode-meta">
+                    <i class="fas fa-calendar"></i> December 31, 2023 | 
+                    <i class="fas fa-clock"></i> 38 min | 
+                    <i class="fas fa-headphones"></i> 24.1K listens
+                </div>
+                <div class="episode-description">
+                    The science behind frisson - those goosebumps you get from powerful music. We explore the 
+                    psychological and physiological responses to emotionally moving songs.
+                </div>
+                <button class="play-btn"><i class="fas fa-play"></i> Play Episode</button>
+            </div>
+
+            <div class="episode-item">
+                <div class="episode-title">Episode 12: Perfect Pitch - Nature or Nurture?</div>
+                <div class="episode-meta">
+                    <i class="fas fa-calendar"></i> December 24, 2023 | 
+                    <i class="fas fa-clock"></i> 40 min | 
+                    <i class="fas fa-headphones"></i> 18.9K listens
+                </div>
+                <div class="episode-description">
+                    Can anyone develop perfect pitch? We examine the genetics, training, and brain structure 
+                    behind this rare musical ability and whether it can be learned.
+                </div>
+                <button class="play-btn"><i class="fas fa-play"></i> Play Episode</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

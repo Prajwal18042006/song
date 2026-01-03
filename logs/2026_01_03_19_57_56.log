@@ -1,0 +1,9 @@
+[ 2026-01-03 19:57:56,552 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 19:57:56,645 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 19:57:56,648 ] INFO - werkzeug -  * Debugger PIN: 127-798-506
+[ 2026-01-03 19:57:56,950 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\data_ingestion.py', reloading
+[ 2026-01-03 19:57:56,951 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\src\\components\\data_ingestion.py', reloading
+[ 2026-01-03 19:57:56,951 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\model_trainer.py', reloading
+[ 2026-01-03 19:57:56,951 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\src\\components\\model_trainer.py', reloading
+[ 2026-01-03 19:57:56,952 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\pipeline\\predict_pipeline.py', reloading
+[ 2026-01-03 19:57:56,952 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\pipeline\\predict_pipeline.py', reloading

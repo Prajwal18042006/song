@@ -1,0 +1,5 @@
+[ 2026-01-03 20:05:16,063 ] INFO - root - Logging system is working properly!
+[ 2026-01-03 20:05:16,188 ] WARNING - werkzeug -  * Debugger is active!
+[ 2026-01-03 20:05:16,193 ] INFO - werkzeug -  * Debugger PIN: 127-798-506
+[ 2026-01-03 20:05:52,497 ] INFO - werkzeug -  * Detected change in 'C:\\Users\\prajw\\OneDrive\\Desktop\\musicrecomentationsystem\\src\\components\\data_transformation.py', reloading
+[ 2026-01-03 20:05:52,508 ] INFO - werkzeug -  * Detected change in 'c:\\users\\prajw\\onedrive\\desktop\\musicrecomentationsystem\\src\\components\\data_transformation.py', reloading
